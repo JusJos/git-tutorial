@@ -20,6 +20,12 @@ app.get('/socks',(req,res)=>{
         size : 'large'
     })
 });
+app.get('/pants',(req,res)=>{
+    res.status(200).send({
+        tshirt : '👖',
+        size : 'large'
+    })
+});
 app.post('/tshirt/:id',(req,res)=>{
     const {id} = req.params;
     const {logo} = req.body;
